@@ -34,7 +34,8 @@ namespace BrinquedosAPI.Migrations
                     Classificacao = table.Column<string>(type: "NVARCHAR2(50)", maxLength: 50, nullable: false),
                     Tamanho = table.Column<string>(type: "NVARCHAR2(20)", maxLength: 20, nullable: false),
                     Preco = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
-                    Id_categoria = table.Column<int>(type: "NUMBER(10)", nullable: true)
+                    Id_categoria = table.Column<int>(type: "NUMBER(10)", nullable: true),
+                    Id_estoque = table.Column<int>(type: "NUMBER(10)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -53,8 +54,9 @@ namespace BrinquedosAPI.Migrations
                 {
                     Id_estoque = table.Column<int>(type: "NUMBER(10)", nullable: false)
                         .Annotation("Oracle:Identity", "START WITH 1 INCREMENT BY 1"),
-                    Id_brinquedo = table.Column<int>(type: "NUMBER(10)", nullable: false),
-                    Quantidade = table.Column<int>(type: "NUMBER(10)", nullable: false)
+                    Quantidade = table.Column<int>(type: "NUMBER(10)", nullable: false),
+                    Faixa = table.Column<string>(type: "NVARCHAR2(50)", maxLength: 50, nullable: false),
+                    Id_brinquedo = table.Column<int>(type: "NUMBER(10)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -76,7 +78,8 @@ namespace BrinquedosAPI.Migrations
                 name: "IX_Estoques_Id_brinquedo",
                 table: "Estoques",
                 column: "Id_brinquedo",
-                unique: true);
+                unique: true,
+                filter: "\"Id_brinquedo\" IS NOT NULL");
         }
 
         /// <inheritdoc />

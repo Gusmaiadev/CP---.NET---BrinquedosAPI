@@ -1,13 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BrinquedosAPI.Data
+namespace BrinquedosAPI.DTOs
 {
-    public class Brinquedo
+    public class BrinquedoDTO
     {
-        [Key]
-        public int Id_brinquedo { get; set; }
-
         [Required]
         [StringLength(100)]
         public string Nome_brinquedo { get; set; }
@@ -25,15 +21,12 @@ namespace BrinquedosAPI.Data
         public string Tamanho { get; set; }
 
         [Required]
-        [Column(TypeName = "decimal(10, 2)")]
         public decimal Preco { get; set; }
 
-        // Relação com Categoria (opcional)
+        // ID da Categoria (opcional)
         public int? Id_categoria { get; set; }
-        public Categoria? Categoria { get; set; }
 
-        // Relação com Estoque (opcional)
+        // ID do Estoque (opcional)
         public int? Id_estoque { get; set; }
-        public Estoque? Estoque { get; set; }
     }
 }

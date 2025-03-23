@@ -11,7 +11,7 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace BrinquedosAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250323164918_InitialCreate")]
+    [Migration("20250323175647_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -38,6 +38,9 @@ namespace BrinquedosAPI.Migrations
                         .HasColumnType("NVARCHAR2(50)");
 
                     b.Property<int?>("Id_categoria")
+                        .HasColumnType("NUMBER(10)");
+
+                    b.Property<int?>("Id_estoque")
                         .HasColumnType("NUMBER(10)");
 
                     b.Property<string>("Nome_brinquedo")
@@ -91,7 +94,12 @@ namespace BrinquedosAPI.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_estoque"));
 
-                    b.Property<int>("Id_brinquedo")
+                    b.Property<string>("Faixa")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR2(50)");
+
+                    b.Property<int?>("Id_brinquedo")
                         .HasColumnType("NUMBER(10)");
 
                     b.Property<int>("Quantidade")
@@ -100,7 +108,8 @@ namespace BrinquedosAPI.Migrations
                     b.HasKey("Id_estoque");
 
                     b.HasIndex("Id_brinquedo")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("\"Id_brinquedo\" IS NOT NULL");
 
                     b.ToTable("Estoques");
                 });
@@ -120,8 +129,7 @@ namespace BrinquedosAPI.Migrations
                     b.HasOne("BrinquedosAPI.Data.Brinquedo", "Brinquedo")
                         .WithOne("Estoque")
                         .HasForeignKey("BrinquedosAPI.Data.Estoque", "Id_brinquedo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Brinquedo");
                 });

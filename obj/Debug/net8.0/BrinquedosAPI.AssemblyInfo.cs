@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrinquedosAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+872bf31c082fb0d3b269eb3fb6a7f8b876560f58")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrinquedosAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrinquedosAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,12 +8,14 @@ namespace BrinquedosAPI.Data
         public int Id_estoque { get; set; }
 
         [Required]
-        public int Id_brinquedo { get; set; }
-
-        [Required]
         public int Quantidade { get; set; }
 
-        // Relação com Brinquedo (1:1)
+        [Required]
+        [StringLength(50)]
+        public string Faixa { get; set; } // Adicione esta linha
+
+        // Relação com Brinquedo (opcional)
+        public int? Id_brinquedo { get; set; }
         public Brinquedo? Brinquedo { get; set; }
     }
 }

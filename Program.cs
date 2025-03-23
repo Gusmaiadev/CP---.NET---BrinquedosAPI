@@ -1,7 +1,15 @@
+using Microsoft.AspNetCore.Http.Json;
+using System.Text.Json.Serialization;
 using BrinquedosAPI.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Configurar o JSON options para lidar com referências circulares
+builder.Services.Configure<JsonOptions>(options =>
+{
+    options.SerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+});
 
 // Configurar o DbContext para usar Oracle
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -14,25 +22,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Construir o aplicativo
 var app = builder.Build();
 
 // Configurar o pipeline HTTP
 if (app.Environment.IsDevelopment())
 {
-    // Habilitar o Swagger e Swagger UI em ambiente de desenvolvimento
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// Redirecionar HTTP para HTTPS
 app.UseHttpsRedirection();
-
-// Habilitar autorização (se necessário)
 app.UseAuthorization();
-
-// Mapear os controllers
 app.MapControllers();
-
-// Executar o aplicativo
 app.Run();

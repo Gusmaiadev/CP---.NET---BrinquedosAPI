@@ -5,6 +5,46 @@
     {
       "AbsoluteMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|c:\\users\\gustavo\\source\\repos\\brinquedosapi\\controllers\\estoquescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|solutionrelative:controllers\\estoquescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|c:\\users\\gustavo\\source\\repos\\brinquedosapi\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|solutionrelative:controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|c:\\users\\gustavo\\source\\repos\\brinquedosapi\\controllers\\brinquedoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|solutionrelative:controllers\\brinquedoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|c:\\users\\gustavo\\source\\repos\\brinquedosapi\\dtos\\brinquedoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|solutionrelative:dtos\\brinquedoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|c:\\users\\gustavo\\source\\repos\\brinquedosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|c:\\users\\gustavo\\source\\repos\\brinquedosapi\\dtos\\estoqueresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|solutionrelative:dtos\\estoqueresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|c:\\users\\gustavo\\source\\repos\\brinquedosapi\\dtos\\categoriaresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|solutionrelative:dtos\\categoriaresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|c:\\users\\gustavo\\source\\repos\\brinquedosapi\\dtos\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|solutionrelative:dtos\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|c:\\users\\gustavo\\source\\repos\\brinquedosapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|c:\\users\\gustavo\\source\\repos\\brinquedosapi\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|solutionrelative:migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|c:\\users\\gustavo\\source\\repos\\brinquedosapi\\migrations\\20250323175647_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86D60E2-D04A-4C4E-976A-2B1707BB97C4}|BrinquedosAPI.csproj|solutionrelative:migrations\\20250323175647_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +54,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BrinquedosController.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\Controllers\\BrinquedosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BrinquedosController.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\Controllers\\BrinquedosController.cs",
+              "RelativeToolTip": "Controllers\\BrinquedosController.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAQwMkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T19:04:50.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EstoqueResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\DTOs\\EstoqueResponseDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\EstoqueResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\DTOs\\EstoqueResponseDTO.cs",
+              "RelativeToolTip": "DTOs\\EstoqueResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T19:02:47.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriasController.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "Controllers\\CategoriasController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T18:57:20.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoriaResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\DTOs\\CategoriaResponseDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\CategoriaResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\DTOs\\CategoriaResponseDTO.cs",
+              "RelativeToolTip": "DTOs\\CategoriaResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T18:55:47.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoriaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\DTOs\\CategoriaDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\CategoriaDTO.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\DTOs\\CategoriaDTO.cs",
+              "RelativeToolTip": "DTOs\\CategoriaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T18:54:53.293Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,9 +129,74 @@
               "RelativeDocumentMoniker": "Controllers\\EstoquesController.cs",
               "ToolTip": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\Controllers\\EstoquesController.cs",
               "RelativeToolTip": "Controllers\\EstoquesController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAwwEAAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAQwIQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T17:03:29.401Z",
+              "WhenOpened": "2025-03-23T19:03:12.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BrinquedoResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\DTOs\\BrinquedoResponseDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\BrinquedoResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\DTOs\\BrinquedoResponseDTO.cs",
+              "RelativeToolTip": "DTOs\\BrinquedoResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T19:20:31.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwB0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T18:45:54.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-23T18:45:35.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAwwJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T18:45:17.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20250323175647_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\Migrations\\20250323175647_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250323175647_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Gustavo\\source\\repos\\BrinquedosAPI\\Migrations\\20250323175647_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250323175647_InitialCreate.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAswGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T18:44:41.004Z",
               "EditorCaption": ""
             }
           ]

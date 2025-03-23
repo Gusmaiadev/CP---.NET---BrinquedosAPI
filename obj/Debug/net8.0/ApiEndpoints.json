@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "BrinquedosAPI.Controllers.BrinquedosController",
-    "Method": "Get",
+    "Method": "GetAll",
     "RelativePath": "api/Brinquedos",
     "HttpMethod": "GET",
     "IsController": true,
@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "brinquedo",
-        "Type": "BrinquedosAPI.Data.Brinquedo",
+        "Name": "brinquedoDTO",
+        "Type": "BrinquedosAPI.DTOs.BrinquedoDTO",
         "IsRequired": true
       }
     ],
@@ -55,8 +55,8 @@
         "IsRequired": true
       },
       {
-        "Name": "brinquedoAtualizado",
-        "Type": "BrinquedosAPI.Data.Brinquedo",
+        "Name": "brinquedoDTO",
+        "Type": "BrinquedosAPI.DTOs.BrinquedoDTO",
         "IsRequired": true
       }
     ],
@@ -80,7 +80,7 @@
   },
   {
     "ContainingType": "BrinquedosAPI.Controllers.CategoriasController",
-    "Method": "Get",
+    "Method": "GetAll",
     "RelativePath": "api/Categorias",
     "HttpMethod": "GET",
     "IsController": true,
@@ -97,8 +97,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "categoria",
-        "Type": "BrinquedosAPI.Data.Categoria",
+        "Name": "categoriaDTO",
+        "Type": "BrinquedosAPI.DTOs.CategoriaDTO",
         "IsRequired": true
       }
     ],
@@ -134,8 +134,8 @@
         "IsRequired": true
       },
       {
-        "Name": "categoriaAtualizada",
-        "Type": "BrinquedosAPI.Data.Categoria",
+        "Name": "categoriaDTO",
+        "Type": "BrinquedosAPI.DTOs.CategoriaDTO",
         "IsRequired": true
       }
     ],
@@ -159,7 +159,7 @@
   },
   {
     "ContainingType": "BrinquedosAPI.Controllers.EstoquesController",
-    "Method": "Get",
+    "Method": "GetAll",
     "RelativePath": "api/Estoques",
     "HttpMethod": "GET",
     "IsController": true,
@@ -176,8 +176,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "estoque",
-        "Type": "BrinquedosAPI.Data.Estoque",
+        "Name": "estoqueDTO",
+        "Type": "BrinquedosAPI.DTOs.EstoqueDTO",
         "IsRequired": true
       }
     ],
@@ -213,8 +213,8 @@
         "IsRequired": true
       },
       {
-        "Name": "estoqueAtualizado",
-        "Type": "BrinquedosAPI.Data.Estoque",
+        "Name": "estoqueDTO",
+        "Type": "BrinquedosAPI.DTOs.EstoqueDTO",
         "IsRequired": true
       }
     ],
