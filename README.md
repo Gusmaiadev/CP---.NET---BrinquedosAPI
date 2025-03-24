@@ -1,306 +1,277 @@
-Que ótimo que tudo funcionou! Vou criar um **README completo** para o seu projeto, explicando a estrutura, os endpoints disponíveis, como executar o projeto e exemplos de uso. Aqui está o texto do README:
+# BrinquedosAPI - Documentação Completa
+
+## 📖 Índice
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Como Executar](#-como-executar-o-projeto)
+- [Endpoints da API](#-endpoints-da-api)
+  - [Brinquedos](#1-brinquedos)
+  - [Categorias](#2-categorias)
+  - [Estoques](#3-estoques)
+  - [Fornecedores](#4-fornecedores)
+- [Relações Especiais](#-relações-especiais)
+- [Exemplos de Uso](#-exemplos-de-uso)
 
 ---
 
-# BrinquedosAPI
-
-A **BrinquedosAPI** é uma aplicação RESTful desenvolvida em .NET para gerenciar brinquedos, categorias e estoques. Ela permite realizar operações básicas de CRUD (Create, Read, Update, Delete) para cada uma dessas entidades, utilizando um banco de dados Oracle.
-
 ## 🚀 Tecnologias Utilizadas
-
-- **.NET 6**: Framework para desenvolvimento da API.
-- **Entity Framework Core**: ORM para mapeamento e manipulação do banco de dados.
-- **Oracle Database**: Banco de dados relacional utilizado para armazenar os dados.
-- **Swagger/OpenAPI**: Documentação interativa da API.
-- **DTOs (Data Transfer Objects)**: Padrão para transferência de dados entre a API e o cliente.
+- **.NET 6**
+- **Entity Framework Core**
+- **Oracle Database**
+- **Swagger/OpenAPI**
+- **DTO Pattern**
 
 ---
 
 ## 📋 Estrutura do Projeto
-
-O projeto está organizado da seguinte forma:
-
 ```
 BrinquedosAPI/
 ├── Controllers/
 │   ├── BrinquedosController.cs
 │   ├── CategoriasController.cs
-│   └── EstoquesController.cs
+│   ├── EstoquesController.cs
+│   └── FornecedoresController.cs
 ├── Data/
 │   ├── AppDbContext.cs
 │   ├── Brinquedo.cs
 │   ├── Categoria.cs
-│   └── Estoque.cs
+│   ├── Estoque.cs
+│   ├── Fornecedor.cs
+│   └── BrinquedoFornecedor.cs
 ├── DTOs/
-│   ├── BrinquedoDTO.cs
-│   ├── CategoriaDTO.cs
-│   ├── EstoqueDTO.cs
-│   ├── BrinquedoResponseDTO.cs
-│   ├── CategoriaResponseDTO.cs
-│   └── EstoqueResponseDTO.cs
-├── Migrations/
-│   └── (Arquivos de migração do Entity Framework)
-├── appsettings.json
-└── Program.cs
+│   ├── (Todos os DTOs existentes)
+│   ├── FornecedorDTO.cs
+│   └── FornecedorResponseDTO.cs
+└── Migrations/
 ```
-
-### Principais Classes
-
-- **Controllers**: Contêm os endpoints da API.
-- **Data**: Contém as classes de modelo e o contexto do banco de dados (`AppDbContext`).
-- **DTOs**: Contém os objetos de transferência de dados (DTOs) para entrada e saída da API.
-- **Migrations**: Contém as migrações do Entity Framework para criar e atualizar o banco de dados.
 
 ---
 
 ## 🛠️ Como Executar o Projeto
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/BrinquedosAPI.git
+cd BrinquedosAPI
 
-### Pré-requisitos
+# Configure a conexão no appsettings.json
+# Execute as migrações
+dotnet ef database update
 
-1. **.NET 6 SDK**: Instale o .NET 6 SDK a partir do [site oficial](https://dotnet.microsoft.com/download/dotnet/6.0).
-2. **Oracle Database**: Certifique-se de ter um banco de dados Oracle configurado e acessível.
-3. **Visual Studio ou Visual Studio Code**: Para editar e executar o projeto.
-
-### Passos para Execução
-
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/seu-usuario/BrinquedosAPI.git
-   cd BrinquedosAPI
-   ```
-
-2. **Configure a conexão com o banco de dados**:
-   - No arquivo `appsettings.json`, atualize a string de conexão com as credenciais do seu banco de dados Oracle:
-     ```json
-     "ConnectionStrings": {
-       "DefaultConnection": "User Id=seu_usuario;Password=sua_senha;Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=seu_host)(PORT=1521))(CONNECT_DATA=(SID=seu_sid)))"
-     }
-     ```
-
-3. **Execute as migrações**:
-   - No terminal, execute o seguinte comando para aplicar as migrações e criar as tabelas no banco de dados:
-     ```bash
-     dotnet ef database update
-     ```
-
-4. **Execute o projeto**:
-   - No terminal, execute:
-     ```bash
-     dotnet run
-     ```
-   - A API estará disponível em `https://localhost:5001` (ou outra porta, dependendo da configuração).
-
-5. **Acesse o Swagger**:
-   - Abra o navegador e acesse `https://localhost:5001/swagger` para visualizar e testar os endpoints da API.
+# Inicie a aplicação
+dotnet run
+```
+Acesse: `https://localhost:5001/swagger`
 
 ---
 
 ## 📚 Endpoints da API
 
-A API possui três recursos principais: **Brinquedos**, **Categorias** e **Estoques**. Abaixo estão os endpoints disponíveis para cada recurso.
-
 ### 1. Brinquedos
+| Método | Endpoint | Descrição |
+|--------|----------|-----------|
+| GET | `/api/brinquedos` | Lista todos os brinquedos |
+| GET | `/api/brinquedos/{id}` | Obtém um brinquedo por ID |
+| POST | `/api/brinquedos` | Cria novo brinquedo |
+| PUT | `/api/brinquedos/{id}` | Atualiza brinquedo |
+| DELETE | `/api/brinquedos/{id}` | Remove brinquedo |
 
-#### GET /api/brinquedos
-- **Descrição**: Retorna uma lista de todos os brinquedos.
-- **Exemplo de Resposta**:
-  ```json
-  [
+**Exemplo de Brinquedo:**
+```json
+{
+  "id_brinquedo": 1,
+  "nome_brinquedo": "Boneca Barbie",
+  "tipo_brinquedo": "Boneca",
+  "classificacao": "4+",
+  "tamanho": "30cm",
+  "preco": 99.90,
+  "fornecedores": [
     {
-      "id_brinquedo": 1,
-      "nome_brinquedo": "Barbie",
-      "tipo_brinquedo": "Boneca",
-      "classificacao": "4+",
-      "tamanho": "12cm",
-      "preco": 50.00,
-      "id_categoria": 1,
-      "id_estoque": 1
+      "id_fornecedor": 1,
+      "nome_fornecedor": "Distribuidora de Brinquedos LTDA"
     }
   ]
-  ```
-
-#### GET /api/brinquedos/{id}
-- **Descrição**: Retorna um brinquedo específico pelo ID.
-- **Exemplo de Resposta**:
-  ```json
-  {
-    "id_brinquedo": 1,
-    "nome_brinquedo": "Barbie",
-    "tipo_brinquedo": "Boneca",
-    "classificacao": "4+",
-    "tamanho": "12cm",
-    "preco": 50.00,
-    "id_categoria": 1,
-    "id_estoque": 1
-  }
-  ```
-
-#### POST /api/brinquedos
-- **Descrição**: Cria um novo brinquedo.
-- **Exemplo de Requisição**:
-  ```json
-  {
-    "nome_brinquedo": "Carrinho",
-    "tipo_brinquedo": "Brinquedo de montar",
-    "classificacao": "Livre",
-    "tamanho": "Médio",
-    "preco": 30.00,
-    "id_categoria": 2,
-    "id_estoque": 2
-  }
-  ```
-
-#### PUT /api/brinquedos/{id}
-- **Descrição**: Atualiza um brinquedo existente.
-- **Exemplo de Requisição**:
-  ```json
-  {
-    "nome_brinquedo": "Carrinho Atualizado",
-    "tipo_brinquedo": "Brinquedo de montar",
-    "classificacao": "Livre",
-    "tamanho": "Médio",
-    "preco": 35.00,
-    "id_categoria": 2,
-    "id_estoque": 2
-  }
-  ```
-
-#### DELETE /api/brinquedos/{id}
-- **Descrição**: Remove um brinquedo pelo ID.
-- **Resposta**: `204 No Content`.
-
----
+}
+```
 
 ### 2. Categorias
+| Método | Endpoint | Descrição |
+|--------|----------|-----------|
+| GET | `/api/categorias` | Lista categorias |
+| GET | `/api/categorias/{id}` | Obtém categoria por ID |
+| POST | `/api/categorias` | Cria nova categoria |
+| PUT | `/api/categorias/{id}` | Atualiza categoria |
+| DELETE | `/api/categorias/{id}` | Remove categoria |
 
-#### GET /api/categorias
-- **Descrição**: Retorna uma lista de todas as categorias.
-- **Exemplo de Resposta**:
-  ```json
-  [
-    {
-      "id_categoria": 1,
-      "nome_categoria": "Bonecas"
-    }
-  ]
-  ```
-
-#### GET /api/categorias/{id}
-- **Descrição**: Retorna uma categoria específica pelo ID.
-- **Exemplo de Resposta**:
-  ```json
-  {
-    "id_categoria": 1,
-    "nome_categoria": "Bonecas"
-  }
-  ```
-
-#### POST /api/categorias
-- **Descrição**: Cria uma nova categoria.
-- **Exemplo de Requisição**:
-  ```json
-  {
-    "nome_categoria": "Carrinhos"
-  }
-  ```
-
-#### PUT /api/categorias/{id}
-- **Descrição**: Atualiza uma categoria existente.
-- **Exemplo de Requisição**:
-  ```json
-  {
-    "nome_categoria": "Carrinhos Atualizados"
-  }
-  ```
-
-#### DELETE /api/categorias/{id}
-- **Descrição**: Remove uma categoria pelo ID.
-- **Resposta**: `204 No Content`.
-
----
+**Exemplo:**
+```json
+{
+  "id_categoria": 1,
+  "nome_categoria": "Bonecas"
+}
+```
 
 ### 3. Estoques
+| Método | Endpoint | Descrição |
+|--------|----------|-----------|
+| GET | `/api/estoques` | Lista estoques |
+| GET | `/api/estoques/{id}` | Obtém estoque por ID |
+| POST | `/api/estoques` | Cria novo estoque |
+| PUT | `/api/estoques/{id}` | Atualiza estoque |
+| DELETE | `/api/estoques/{id}` | Remove estoque |
 
-#### GET /api/estoques
-- **Descrição**: Retorna uma lista de todos os estoques.
-- **Exemplo de Resposta**:
-  ```json
-  [
+**Exemplo:**
+```json
+{
+  "id_estoque": 1,
+  "quantidade": 150,
+  "faixa": "100-200"
+}
+```
+
+### 4. Fornecedores
+| Método | Endpoint | Descrição |
+|--------|----------|-----------|
+| GET | `/api/fornecedores` | Lista fornecedores |
+| GET | `/api/fornecedores/{id}` | Obtém fornecedor por ID |
+| POST | `/api/fornecedores` | Cria novo fornecedor |
+| PUT | `/api/fornecedores/{id}` | Atualiza fornecedor |
+| DELETE | `/api/fornecedores/{id}` | Remove fornecedor |
+
+**Exemplo Completo:**
+```json
+{
+  "id_fornecedor": 1,
+  "nome_fornecedor": "Distribuidora de Brinquedos LTDA",
+  "nome_representante": "João Silva",
+  "cnpj": "12.345.678/0001-99",
+  "telefone": "(11) 99999-9999",
+  "brinquedos_fornecidos": [
     {
-      "id_estoque": 1,
-      "quantidade": 100,
-      "faixa": "1 a 500"
+      "id_brinquedo": 1,
+      "nome_brinquedo": "Boneca Barbie"
     }
   ]
-  ```
-
-#### GET /api/estoques/{id}
-- **Descrição**: Retorna um estoque específico pelo ID.
-- **Exemplo de Resposta**:
-  ```json
-  {
-    "id_estoque": 1,
-    "quantidade": 100,
-    "faixa": "1 a 500"
-  }
-  ```
-
-#### POST /api/estoques
-- **Descrição**: Cria um novo estoque.
-- **Exemplo de Requisição**:
-  ```json
-  {
-    "quantidade": 200,
-    "faixa": "500 a 1000"
-  }
-  ```
-
-#### PUT /api/estoques/{id}
-- **Descrição**: Atualiza um estoque existente.
-- **Exemplo de Requisição**:
-  ```json
-  {
-    "quantidade": 250,
-    "faixa": "500 a 1000"
-  }
-  ```
-
-#### DELETE /api/estoques/{id}
-- **Descrição**: Remove um estoque pelo ID.
-- **Resposta**: `204 No Content`.
+}
+```
 
 ---
 
-## 📝 Exemplos de Uso
+## 🔗 Relações Especiais
 
-### Criar um Brinquedo
-1. **Requisição**:
-   ```bash
-   POST /api/brinquedos
-   ```
-   ```json
-   {
-     "nome_brinquedo": "Lego",
-     "tipo_brinquedo": "Brinquedo de montar",
-     "classificacao": "6+",
-     "tamanho": "Grande",
-     "preco": 100.00,
-     "id_categoria": 2,
-     "id_estoque": 3
-   }
-   ```
+### Associar Fornecedor a Brinquedo
+```http
+POST /api/brinquedos/{brinquedoId}/fornecedores/{fornecedorId}
+```
+**Resposta de Sucesso:**
+```json
+{
+  "message": "Fornecedor associado com sucesso"
+}
+```
 
-2. **Resposta**:
-   ```json
-   {
-     "id_brinquedo": 3,
-     "nome_brinquedo": "Lego",
-     "tipo_brinquedo": "Brinquedo de montar",
-     "classificacao": "6+",
-     "tamanho": "Grande",
-     "preco": 100.00,
-     "id_categoria": 2,
-     "id_estoque": 3
-   }
-   ```
+### Listar Fornecedores de um Brinquedo
+```http
+GET /api/brinquedos/{id}/fornecedores
+```
+**Exemplo de Resposta:**
+```json
+[
+  {
+    "id_fornecedor": 1,
+    "nome_fornecedor": "Distribuidora de Brinquedos LTDA",
+    "cnpj": "12.345.678/0001-99"
+  }
+]
+```
 
+### Remover Associação
+```http
+DELETE /api/brinquedos/{brinquedoId}/fornecedores/{fornecedorId}
+```
+
+---
+
+## 📝 Exemplos de Uso Completos
+
+### 1. Cadastro Completo de Brinquedo com Fornecedor
+```http
+POST /api/brinquedos
+```
+**Request:**
+```json
+{
+  "nome_brinquedo": "Carrinho de Controle Remoto",
+  "tipo_brinquedo": "Eletrônico",
+  "classificacao": "8+",
+  "tamanho": "Médio",
+  "preco": 199.90,
+  "id_categoria": 3,
+  "id_estoque": 2
+}
+```
+
+**Associar Fornecedor:**
+```http
+POST /api/brinquedos/5/fornecedores/2
+```
+
+### 2. Consulta Completa de Brinquedo
+```http
+GET /api/brinquedos/5
+```
+**Response:**
+```json
+{
+  "id_brinquedo": 5,
+  "nome_brinquedo": "Carrinho de Controle Remoto",
+  "tipo_brinquedo": "Eletrônico",
+  "classificacao": "8+",
+  "tamanho": "Médio",
+  "preco": 199.90,
+  "categoria": {
+    "id_categoria": 3,
+    "nome_categoria": "Eletrônicos"
+  },
+  "estoque": {
+    "id_estoque": 2,
+    "quantidade": 75
+  },
+  "fornecedores": [
+    {
+      "id_fornecedor": 2,
+      "nome_fornecedor": "Importadora de Brinquedos Eletrônicos",
+      "cnpj": "98.765.432/0001-11"
+    }
+  ]
+}
+```
+
+### 3. Cadastro de Fornecedor com Validação de CNPJ
+```http
+POST /api/fornecedores
+```
+**Request:**
+```json
+{
+  "nome_fornecedor": "Nova Distribuidora",
+  "nome_representante": "Maria Oliveira",
+  "cnpj": "11.223.334/0001-55",
+  "telefone": "(21) 98888-7777"
+}
+```
+
+**Em caso de CNPJ duplicado:**
+```json
+{
+  "message": "Já existe um fornecedor cadastrado com este CNPJ",
+  "fornecedorExistente": {
+    "id_fornecedor": 3,
+    "nome_fornecedor": "Distribuidora Antiga",
+    "cnpj": "11.223.334/0001-55"
+  }
+}
+```
+
+---
+
+Este README agora inclui toda a funcionalidade de fornecedores com exemplos práticos de uso e as relações entre entidades.
