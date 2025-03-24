@@ -272,4 +272,5 @@ POST /api/fornecedores
 }
 ```
 
+##GET/api/Brinquedos
 ![Descrição da Imagem](assets/GetBrinquedos.png)
