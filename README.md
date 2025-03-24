@@ -274,3 +274,18 @@ POST /api/fornecedores
 
 ## GET/api/Brinquedos
 ![Descrição da Imagem](assets/GetBrinquedos.png)
+
+## GET/api/Brinquedos/{id}/fornecedores
+![Descrição da Imagem](assets/GetBrinquedosFornecedores.png)
+
+## GET/api/Categorias
+![Descrição da Imagem](assets/GetCategorias.png)
+
+## GET/api/Estoques
+![Descrição da Imagem](assets/GetEstoques.png)
+
+## GET/api/Fornecedores
+![Descrição da Imagem](assets/GetFornecedores.png)
+
+
+
