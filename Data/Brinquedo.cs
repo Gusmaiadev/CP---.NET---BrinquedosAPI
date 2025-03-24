@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BrinquedosAPI.Data
@@ -35,5 +36,14 @@ namespace BrinquedosAPI.Data
         // Relação com Estoque (opcional)
         public int? Id_estoque { get; set; }
         public Estoque? Estoque { get; set; }
+
+        // Relação muitos-para-muitos com Fornecedores
+        public ICollection<BrinquedoFornecedor> BrinquedoFornecedores { get; set; }
+
+        // Construtor para inicializar a coleção
+        public Brinquedo()
+        {
+            BrinquedoFornecedores = new HashSet<BrinquedoFornecedor>();
+        }
     }
 }

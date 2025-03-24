@@ -10,5 +10,6 @@
         public decimal Preco { get; set; }
         public int? Id_categoria { get; set; }
         public int? Id_estoque { get; set; }
+        public List<FornecedorResponseDTO> Fornecedores { get; set; } = new List<FornecedorResponseDTO>();
     }
 }
