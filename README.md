@@ -15,7 +15,7 @@
 ---
 
 ## 🚀 Tecnologias Utilizadas
-- **.NET 6**
+- **.NET 8**
 - **Entity Framework Core**
 - **Oracle Database**
 - **Swagger/OpenAPI**
