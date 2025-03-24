@@ -272,6 +272,4 @@ POST /api/fornecedores
 }
 ```
 
----
 
-Este README agora inclui toda a funcionalidade de fornecedores com exemplos práticos de uso e as relações entre entidades.
